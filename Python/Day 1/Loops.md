@@ -1,33 +1,39 @@
-For Loop
-n = int(input("Enter a number: "))
-for i in range(n):
+# 1. FOR LOOP (Counting loop)
+# range(5) means count from 0 to 4
+for i in range(5):
+    print(i)  # Prints: 0, 1, 2, 3, 4
+
+
+# 2. WHILE LOOP (Conditional loop)
+count = 0
+# Keep going as long as count is less than 5
+while count < 5:
+    print(count)
+    count += 1  # Adds 1 so the loop can eventually stop!
+
+
+# 3. NESTED LOOP (Loop inside a loop)
+# For every 1 turn of the outer loop, the inner loop runs completely
+for i in range(3):        # Outer loop
+    for j in range(2):    # Inner loop
+        print(f'i: {i}, j: {j}')
+
+
+# 4. LOOP WITH ELSE
+for i in range(5):
     print(i)
+else:
+    print("Loop completed successfully.")  # Runs only if the loop finishes normally
 
 
-While Loop
-m = int(input("Enter a number: "))
-i = 0
-while i < m:
-    print(i)
-    i += 1
+# 5. LOOP WITH BREAK (Stop everything)
+for i in range(5):
+    if i == 3:
+        break  # Emergency exit! Stops the whole loop right now
+    print(i)   # This will only print 0, 1, and 2
 
 
-#match case
-day = int(input("Enter a day of the week: "))
-match day:
-    case 1:
-        print("Monday")
-    case 2:
-        print("Tuesday")
-    case 3:
-        print("Wednesday")
-    case 4:
-        print("Thursday")
-    case 5:
-        print("Friday")
-    case 6:
-        print("Saturday")
-    case 7:
-        print("Sunday")
-    case _:
-        print("Invalid day of the week.")
+for i in range(5):
+    if i == 3:
+        continue  # Skip button! Jumps straight to the next number
+    print(i)      # This prints 0, 1, 2, 4 (skips 3)
