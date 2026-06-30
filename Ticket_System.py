@@ -74,7 +74,7 @@ pricing_chart = {"Standard": 150, "Luxury": 250, "VIP": 400}
 
 
 def book_ticket():
-    print("--- WELCOME TO THE MOVIE BOOKING SYSTEM ---")
+    print("WELCOME TO THE MOVIE BOOKING SYSTEM")
 
     cities = list(booking_dataset.keys())
     print("\nAvailable Cities:")
